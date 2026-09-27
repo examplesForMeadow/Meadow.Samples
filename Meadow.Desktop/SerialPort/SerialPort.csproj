@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Meadow.Desktop" Version="2.*" />
+    </ItemGroup>
+<!--
+  TEMPORARY: using released 2.x NuGet packages because no net9.0 Meadow has shipped yet.
+  Restore these original ProjectReferences when it does:
+    ..\..\..\..\Meadow.Core\Source\implementations\desktop\Meadow.Desktop\Meadow.Desktop.csproj
+-->
+</Project>

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Meadow.Sdk/1.1.0">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <OutputType>Library</OutputType>
+        <AssemblyName>App</AssemblyName>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Meadow.F7" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Graphics.MicroGraphics" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Audio.Radio.Tea5767" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Displays.Ssd130x" Version="2.*" />
+    </ItemGroup>
+<!--
+  TEMPORARY: using released 2.x NuGet packages because no net9.0 Meadow has shipped yet.
+  Restore these original ProjectReferences when it does:
+    ..\..\..\..\Meadow.Core\Source\implementations\f7\Meadow.F7\Meadow.F7.csproj
+    ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Core\Meadow.Foundation.Core.csproj
+    ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Audio.Radio.Tea5767\Driver\Audio.Radio.Tea5767.csproj
+    ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Displays.Ssd130x\Driver\Displays.Ssd130x.csproj
+-->
+</Project>

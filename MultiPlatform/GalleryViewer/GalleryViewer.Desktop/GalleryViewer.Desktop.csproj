@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <LangVersion>10</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Meadow.Desktop" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Sensors.Hid.Keyboard" Version="2.*" />
+        <ProjectReference Include="..\galleryviewer.Core\GalleryViewer.Core.csproj" />
+    </ItemGroup>
+<!--
+  TEMPORARY: using released 2.x NuGet packages because no net9.0 Meadow has shipped yet.
+  Restore these original ProjectReferences when it does:
+    ..\..\..\..\..\Meadow.Core\Source\implementations\desktop\Meadow.Desktop\Meadow.Desktop.csproj
+    ..\..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Core\Meadow.Foundation.Core.csproj
+    ..\..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Sensors.Hid.Keyboard\Driver\Sensors.Hid.Keyboard.csproj
+-->
+</Project>

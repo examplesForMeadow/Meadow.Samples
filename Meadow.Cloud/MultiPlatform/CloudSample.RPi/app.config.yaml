@@ -1,0 +1,10 @@
+Logging:
+    LogLevel:
+        # Trace, Debug, Information, Warning, or Error
+        Default: Trace
+
+MeadowCloud:
+    Enabled: true
+    EnableUpdates: true
+    EnableHealthMetrics: true
+    HealthMetricsIntervalMinutes: 1

@@ -1,0 +1,14 @@
+# Meadow.Cloud configuration.
+# Logging configuration.
+Logging:
+
+    # Adjust the level of logging detail.
+    LogLevel:
+    
+        # Trace, Debug, Information, Warning, or Error
+        Default: Trace
+
+MeadowCloud:
+    # Enable Meadow.Cloud features
+    Enabled: true
+    EnableUpdates: true

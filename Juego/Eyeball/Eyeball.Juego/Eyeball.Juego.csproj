@@ -1,0 +1,23 @@
+﻿<Project Sdk="Meadow.Sdk/1.1.0">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <OutputType>Library</OutputType>
+        <AssemblyName>App</AssemblyName>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Meadow.Juego" Version="*" />
+        <ProjectReference Include="..\Eyeball.Core\Eyeball.Core.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="app.build.yaml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+<!--
+  TEMPORARY: using released 2.x NuGet packages because no net9.0 Meadow has shipped yet.
+  Restore these original ProjectReferences when it does:
+    ..\..\..\..\..\Juego\Source\Juego\Juego.csproj
+-->
+</Project>

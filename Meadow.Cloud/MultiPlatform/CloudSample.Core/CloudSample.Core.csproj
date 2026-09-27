@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+            <LangVersion>10</LangVersion>
+    </PropertyGroup>
+    <!--
+      TEMPORARY: using released 2.x NuGet packages because the boards run Meadow OS 2.5.2.1
+      and no net9.0-compatible Meadow OS has shipped yet. When it does, restore the original
+      ProjectReferences:
+        ..\..\..\..\..\Meadow.Contracts\Source\Meadow.Contracts\Meadow.Contracts.csproj
+        ..\..\..\..\..\Meadow.Logging\Source\Meadow.Logging.LogProviders\Driver\Meadow.Logging.LogProviders.csproj
+    -->
+    <ItemGroup>
+        <PackageReference Include="Meadow.Contracts" Version="2.*" />
+        <PackageReference Include="Meadow.Logging.LogProviders" Version="2.*" />
+    </ItemGroup>
+</Project>

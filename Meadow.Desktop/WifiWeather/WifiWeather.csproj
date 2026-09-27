@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFrameworks>net8.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <LangVersion>10.0</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="w_clear.bmp" />
+        <None Remove="w_cloudy.bmp" />
+        <None Remove="w_drizzle.bmp" />
+        <None Remove="w_misc.bmp" />
+        <None Remove="w_rain.bmp" />
+        <None Remove="w_snow.bmp" />
+        <None Remove="w_storm.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\w_clear.bmp" />
+        <EmbeddedResource Include="Resources\w_cloudy.bmp" />
+        <EmbeddedResource Include="Resources\w_drizzle.bmp" />
+        <EmbeddedResource Include="Resources\w_misc.bmp" />
+        <EmbeddedResource Include="Resources\w_rain.bmp" />
+        <EmbeddedResource Include="Resources\w_snow.bmp" />
+        <EmbeddedResource Include="Resources\w_storm.bmp" />
+    </ItemGroup>
+
+    <!--
+      TEMPORARY: using released 2.x NuGet packages instead of the net9.0-migrated local repos
+      (kept consistent with the device-app conversions; no net9.0 Meadow has shipped yet).
+      This is a DESKTOP app (runs on the PC, not on a Meadow board). When net9.0 Meadow ships,
+      restore the original ProjectReferences:
+        ..\..\..\..\Meadow.Core\Source\implementations\desktop\Meadow.Desktop\Meadow.Desktop.csproj
+        ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Libraries_and_Frameworks\Graphics.MicroLayout\Driver\Graphics.MicroLayout.csproj
+        ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Displays.TftSpi\Driver\Displays.TftSpi.csproj
+        ..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\ICs.IOExpanders.Ftxxxx\Driver\ICs.IOExpanders.Ftxxxx.csproj
+    -->
+    <ItemGroup>
+        <PackageReference Include="System.Text.Json" Version="*" />
+        <PackageReference Include="Meadow.Desktop" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Graphics.MicroLayout" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.Displays.TftSpi" Version="2.*" />
+        <PackageReference Include="Meadow.Foundation.ICs.IOExpanders.Ftxxxx" Version="2.*" />
+    </ItemGroup>
+</Project>

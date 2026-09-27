@@ -1,0 +1,26 @@
+﻿<Project Sdk="Meadow.Sdk/1.1.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <OutputType>Library</OutputType>
+    <AssemblyName>App</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Meadow.Foundation.Sensors.Distance.MaxBotix" Version="2.*" />
+    <PackageReference Include="Meadow.Foundation.Graphics.MicroGraphics" Version="2.*" />
+    <PackageReference Include="Meadow.Foundation.Sensors.Distance.Vl53l0x" Version="2.*" />
+    <PackageReference Include="Meadow.ProjectLab" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="meadow.config.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+<!--
+  TEMPORARY: using released 2.x NuGet packages because no net9.0 Meadow has shipped yet.
+  Restore these original ProjectReferences when it does:
+    ..\..\..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Sensors.Distance.MaxBotix\Driver\Sensors.Distance.MaxBotix.csproj
+    ..\..\..\..\..\..\Meadow.Foundation\Source\Meadow.Foundation.Peripherals\Sensors.Distance.Vl53l0x\Driver\Sensors.Distance.Vl53l0x.csproj
+    ..\..\..\..\..\..\Meadow.ProjectLab\Source\Meadow.ProjectLab\Meadow.ProjectLab.csproj
+-->
+</Project>

@@ -1,0 +1,681 @@
+<!--
+  TEMPORARY: converted solution for released 2.x NuGet packages (boards run Meadow OS 2.5.2.1;
+  no net9.0-compatible Meadow OS has shipped yet). Mirrors Meadow.Samples-main\Source\Meadow.Samples.sln
+  but contains only the converted projects; Meadow dependencies come from released NuGet packages.
+  Omitted: MAUI companion apps, MauiMeadow, the Azure Function project, and the CloudSample
+  Desktop/RPi heads (they run on phone/PC, not Meadow hardware, or need MAUI workloads).
+-->
+<Solution>
+  <Folder Name="/Azure/">
+    <Project Path="Azure/F7Feather_AzureIoTHub/F7Feather_AzureIoTHub.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Azure/F7Feather_CustomVisionBostonDetector/F7Feather_CustomVisionBostonDetector.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Azure/ProjectLab_AzureIoTHub/ProjectLab_AzureIoTHub.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/GnssTracker/">
+    <Project Path="GnssTracker/Connectivity/GnssTrackerConnectivity/GnssTrackerConnectivity.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Juego/">
+    <Project Path="Juego/Eyeball/Eyeball.Core/Eyeball.Core.csproj" />
+    <Project Path="Juego/Eyeball/Eyeball.Juego/Eyeball.Juego.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/FallingSand/FallingSand.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/Froggit/Froggit.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/GameOfLife/GameOfLife.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/Snake/Snake.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/Span4/Span4.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/Starfield/Starfield.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Juego/Tetraminoes/Tetraminos.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Meadow F7/">
+    <Project Path="Meadow F7/Blinky/BlinkyCS/BlinkyCS.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Bluetooth/Bluetooth_Basics/Bluetooth_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Bluetooth/Bluetooth_Notify/Bluetooth_Notify.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Bluetooth/Bluetooth_Restart/Bluetooth_Restart.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Board_Specific_Samples/CoreComputeBreakout/CoreComputeBreakout.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Board_Specific_Samples/F7_Micro_Board_Diagnostics/F7_Micro_Board_Diagnostics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/AnalogInputArray/AnalogInputArray.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/AnalogInputPort/AnalogInputPort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/BiDirectonalPort/BiDirectonalPort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/DigitalInputPort/DigitalInputPort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/DigitalInterruptPort/DigitalInterruptPort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/DigitalSignalAnalyzer/DigitalSignalAnalyzer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/GpioInterrogation/GpioInterrogation.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/I2C/I2C.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/PWM/PWM.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/SerialListener/SerialListener.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/SerialMessagePort/SerialMessagePort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/SerialPort/SerialPort.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/SerialPortEcho/SerialPortEcho.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/SPI/SPI.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/IO/WakeOnInterrupt/WakeOnInterrupt.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/AntennaSwitching/AntennaSwitching.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/Cell_Basics/Cell_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/Ethernet_Basics/Ethernet_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/HttpListener_Basics/HttpListener_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/Smtp/Smtp.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/TLS_Client_Authentication/TLS_Client_Authentication.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/WiFiConfig/WiFiConfig.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Network/WiFi_Basics/WiFi_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/NTP/NtpSample/NtpSample.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/BatteryLevel/BatteryLevel.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/ChargeState/ChargeState.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/ConfigFiles/ConfigFiles.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/CrashDetect/CrashDetect.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/FileSystem_Basics/FileSystem_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/Json_Basics/Json_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/Logging/Logging.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/McuTemp/McuTemp.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/OS_Telemetry/OS_Telemetry.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/PowerManager/PowerManager.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/RealTimeClock/RealTimeClock.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/ResolverServices/ResolverServices.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/SDCard/SDCard.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/SQLite_Basics/SQLite_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/Tasks_Basics/Tasks_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/Threading_Basics/Threading_Basics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/OS/Watchdog/Watchdog.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7/Utilities/WalkingDigitalOutputs/Walking_DigitalOutputs.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Meadow F7 Feather/">
+    <Project Path="Meadow F7 Feather/AnalogWatchFace/AnalogWatchFace.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Bluetooth/MeadowBleLed/MeadowBleLed.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Bluetooth/MeadowBleServo/MeadowBleServo.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Bluetooth/MeadowBleTemperature/MeadowBleTemperature.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/DateCountdown/DateCountdown.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/EdgeASketch/EdgeASketch.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Frogger/Frogger.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/GalleryViewer/GalleryViewer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/HolidayLedStrips/HolidayLedStrips.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/LcdDisplayClock/LcdDisplayClock.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/LedJoystick/LedJoystick.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Maple/MeadowMapleLed/MeadowMapleLed.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Maple/MeadowMapleServo/MeadowMapleServo.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Maple/MeadowMapleTemperature/MeadowMapleTemperature.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/McpLedBarGraph/McpLedBarGraph.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/McpLeds/McpLeds.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/MeadowMenu/MeadowMenu.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/MemoryGame/MemoryGame.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/MoistureMeter/MoistureMeter.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/MorseCodeTrainer/MorseCodeTrainer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/MotionDetector/MotionDetector.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/ObstacleRadar/ObstacleRadar.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/PlantMonitor/PlantMonitor.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/RadioPlayer/RadioPlayer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/RotaryLedBar/RotaryLedBar.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/RotaryServo/RotaryServo.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/RotationDetector/RotationDetector.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Rover/MeadowRoverBle/MeadowRoverBle.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Rover/MeadowRoverLeds/MeadowRoverLeds.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/ShiftRegisterLeds/ShiftRegisterLeds.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/Simon/Simon.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/StopwatchDisplay/StopwatchDisplay.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/TemperatureDisplay/TemperatureDisplay.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/TemperatureMonitor/TemperatureMonitor.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/TouchKeypad/TouchKeypad.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/WiFi/MeadowWifi/MeadowWifi.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/WifiClock/WifiClock.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/WifiWeather/WifiWeather.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow F7 Feather/WifiWeatherClock/WifiWeatherClock.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Meadow.Cloud/">
+    <Project Path="Meadow.Cloud/FeatherF7_OTA/FeatherF7_OTA.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/MeadowF7_HealthMetrics/MeadowF7_HealthMetrics.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/MeadowF7_Logging/MeadowF7_Logging.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/MultiPlatform/CloudSample.Core/CloudSample.Core.csproj" />
+    <Project Path="Meadow.Cloud/MultiPlatform/CloudSample.F7/CloudSample.F7.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/ProjectLab_ApiClient/ProjectLab_ApiClient.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/ProjectLab_Command/ProjectLab_Command.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/ProjectLab_Logging/ProjectLab_Logging.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Meadow.Cloud/ProjectLab_OTA/ProjectLab_OTA.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Meadow.Desktop/">
+    <Project Path="Meadow.Desktop/Amg8833Camera/Amg8833Camera.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/AvaloniaMeadow/AvaloniaMeadow.csproj" />
+    <Project Path="Meadow.Desktop/BlazorMeadow/BlazorMeadow.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/Blinky/CS/Blinky.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/CharacterDisplaySample/CharacterDisplaySample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/DigitalOutputPort/DigitalOutputPort.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/HMI_Views/HMI_Views.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/I2C_Sensors/I2C_Sensors.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/Keyboard/Keyboard.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/Max7219/Max7219Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/NetworkBasics/NetworkBasics.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/PixelDisplay/PixelDisplay_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/SerialPort/SerialPort.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/SimulatedDisplay/SimulatedDisplay.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/SimulatedSensors/SimulatedSensors.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/SPI_Displays/SPI_Displays.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/Touchscreen_Demo/Touchscreen_Demo.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Meadow.Desktop/WifiWeather/WifiWeather.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/Modbus/">
+    <Project Path="Modbus/DesktopModbusClient/DesktopModbusClient.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Modbus/KellerXLine/KellerXLine_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Modbus/MeadowModbusServer/MeadowModbusServer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="Modbus/ModBusClient/ModBusClient.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Modbus/StepperMotor/StepperMotor_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="Modbus/Tstat8_Sample/Tstat8_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/MultiPlatform/">
+    <Project Path="MultiPlatform/AmbientMonitor/AmbientMonitor.Core/AmbientMonitor.Core.csproj" />
+    <Project Path="MultiPlatform/AmbientMonitor/AmbientMonitor.Desktop/AmbientMonitor.Desktop.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/AmbientMonitor/AmbientMonitor.F7/AmbientMonitor.F7.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="MultiPlatform/AmbientMonitor/AmbientMonitor.RPi/AmbientMonitor.RPi.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/GalleryViewer/GalleryViewer.Core/GalleryViewer.Core.csproj" />
+    <Project Path="MultiPlatform/GalleryViewer/GalleryViewer.Desktop/GalleryViewer.Desktop.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/GalleryViewer/GalleryViewer.F7/GalleryViewer.F7.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="MultiPlatform/GalleryViewer/GalleryViewer.RPi/GalleryViewer.RPi.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/MeadowBlazor/MeadowBlazor.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/WiFinder/WiFinder.Core/WiFinder.Core.csproj" />
+    <Project Path="MultiPlatform/WiFinder/WiFinder.Desktop/WiFinder.Desktop.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/WiFinder/WiFinder.ProjectLab/WiFinder.ProjectLab.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="MultiPlatform/WifiWeather/WifiWeather.Core/WifiWeather.Core.csproj" />
+    <Project Path="MultiPlatform/WifiWeather/WifiWeather.Desktop/WifiWeather.Desktop.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="MultiPlatform/WifiWeather/WifiWeather.F7/WifiWeather.F7.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="MultiPlatform/WifiWeather/WifiWeather.RPi/WifiWeather.RPi.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+  <Folder Name="/ProjectLab/">
+    <Project Path="ProjectLab/AmbientRoomMonitor/AmbientRoomMonitor.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/AnalogClockFace/AnalogClockFace.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/CellularSample/CellularSample.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/Connectivity/ProjectLabConnectivity/ProjectLabConnectivity.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/GalleryViewer/GalleryViewer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/GridEYE/GridEYE.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/KellerXLine/KellerXLineSample.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/MagicEightMeadow/MagicEightMeadow.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/MathLineCharts/MathLineCharts.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/MicroLayoutMenu/MicroLayoutMenu.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/ModbusStepperMotor/ModbusStepperMotor_Sample.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/MoistureMeter/MoistureMeter.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/MorseCodeTrainer/MorseCodeTrainer.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/PlantMonitor/PlantMonitor.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/RotatingCube/RotatingCube.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/Simon/Simon.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/ThermalCamera/ThermalCamera.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/Touchscreen_Demo/Touchscreen_Demo.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/WakeOnInterrupt/WakeOnInterrupt.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/WaterStorageMonitor/Source/WaterStorageMonitor.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+    <Project Path="ProjectLab/WifiWeather/WifiWeather.csproj">
+      <BuildType Project="Debug" />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/RaspberryPi/">
+    <Project Path="RaspberryPi/Blinky/Blinky.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/Bme280_Sample/Bme280_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/CharacterDisplaySample/CharacterDisplaySample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/DistanceMeter/DistanceMeter.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/ST7789_Sample/ST7789_Sample.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/WifiWeather/WifiWeather.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+    <Project Path="RaspberryPi/WiFi_Basics/WiFi_Basics.csproj">
+      <BuildType Project="Debug" />
+    </Project>
+  </Folder>
+</Solution>
